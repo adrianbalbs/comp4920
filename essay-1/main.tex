@@ -1,9 +1,12 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[style=authoryear, backend=biber]{biblatex}
+
 \addbibresource{bibliography.bib} %Import the bibliography file
 \DeclareNameAlias{sortname}{family-given}
 \renewbibmacro{in:}{}
+
+\setlength{\parskip}{0.8em}
 
 \title{COMP4920 Essay 1}
 \author{Adrian Balbalosa, z5397730}
@@ -41,32 +44,40 @@ save the life of someone, but we cannot lie as we would be disregarding the auto
 is paradoxical in nature. As a result of this, we are left to deliberate with difficult ethical decisions in
 a complex situation like this.
 \section{The Applicability of Kantian Ethics to Automated Ethics}
-%TODO Revise this section
-In this section I argue that Kantian Ethics is not an appropriate framework for automated ethics,
-specifically in developing artificial moral agents (AMAs) that can make ethical judgements. 
-The reason being that creating these AMAs goes against the ethos of Kantian ethics itself.
 
-Artificial Moral Agents that are built on top of Kantian Ethics are not considered to have
-any autonomy. To be considered a moral agent, one must have freedom of choice \parencite[p. 141]{mannananth2021}. 
-Artificial Moral Agents are not considered to be free because they are programmed to act in a certain way
-\parencite[p. 429]{tonkens2009}. They are not free enough to operate outside of the boundaries of which they
-are programmed, meaning they are not able to exhibit any form freedom that is characteristic of 
-moral agents of Kantianism \parencite[p. 149]{mannananth2021}. As AMAs are not able to exhibit any
-sort of free will, they cannot be considered free enough to justify moral actions.
+An opportunity which Kantian ethics presents is that it has been shown to be computationally
+tractable. \textcite[p. 16]{singh2022} argues that "Kantian ethics is more natural to formalise" compared
+to other ethical theories, as "the Formula of Universal Law evaluates the form and structure of an agent's
+maxim" and requires less knowledge about the "state of affairs" or "moral character". This argument is 
+further solidified through their implementation of an AMA that can successfully evaluate certain
+ethical scenarios, like the nature of joking and lying \parencite[6--7]{singh2022}. It is noted that
+there are still limitations to this implementation because the inputs and outputs require a specific
+structure \parencite[p. 10]{singh2022}. Despite this limitation, we can observe that the use of Kantian
+ethics makes the implementation of AMAs feasible.
 
-Furthermore, the creation of Kantian AMAs goes against the categorical imperative. The categorical
-imperative requires actions are performed as universally necessary, but AMAs only follow a hypothetical
-imperative \parencite[p. 149]{mannananth2021}. This is because they are programmed to work in a particular way
-in order to accomplish some goal, contrasting the nature of the categorical imperative. If we were to
-establish an Artificial Moral Agent as a rational being, we would be treating them as a means to an end,
-which violates the notion of the categorical imperative \parencite[p. 432]{tonkens2009}. Thus, the creation
-of these AMAs ends up contradicting the notions that were established by Kantian ethics.
+A risk of the application of Kantian ethics to automated ethics is that artificial moral agents lack
+genuine autonomy or consciousness. Kant states that transcendental freedom is "fundamental requirement of morality"
+\parencite[p. 142]{mannananth2021}. That is in order to be considered a moral agent, a rational being should 
+have the capability of acting autonomously rather than being controlled from external influences. \textcite[p. 149]{mannananth2021}
+argue that "AI Systems are deterministic models of agency that do not exceed its initial programming". Since AMAs are
+only able to act within the bounds of their programming, AMAs do not possess any consciousness or autonomy. The actions
+of AMAs are mechanically driven, rather than driven by a sense of rationality. This could potentially lead to the
+dehumanisation of the moral decision-making process, since AMAs lack the capacity for free and rational choice, a fundamental
+Kantian value.
 
-While the development of these AMAs seem ethically dubious, Kantian AMAs have shown potential in 
-getting us a step closer to creating machines which can reason about ethical dilemmas. Kantian
-ethics has proved itself ot be a useful ethical framework as a foundation for building 
-an AMA \parencite[p. 3]{singh2022}. Kantian ethics has shown to be easier to embed in AMAs as
-it requires little information about the world compared to other ethical frameworks \parencite[p. 17]{singh2022}.
+Another risk that is present is that an over-reliance on artificial moral agents would have the potential to diminish human engagement
+with moral responsibility. \textcite[p. 146]{mannananth2021} claim that "AI's moral deeds are not generated from
+the 'freedom of will' and the sense of 'duty' itself", but are generated by the programmer's command. The 
+implications of this are even when these machines are programmed to follow ethical guidelines, they perform
+them without actually understanding the moral reasoning behind them. Thus, the actions of AMAs are considered to
+lack moral worth and are considered amoral. Through relying on AI to make our moral decisions, we risk reducing moral
+actions to a mechanical process which lack the moral depth of deliberation. \textcite[p. 148]{mannananth2021} also state
+that an AI agent "works according to hypothetical rules" rather than follow the categorical imperative, since their
+actions are not performed out of a sense of duty, which is a central part of the categorical imperative. Hence, these
+machines follows rules that are conditional rather than universal. The implications of this are that AI machines are
+unable to understand the universal nature of the categorical imperative. Thus, with over-reliance on these systems,
+we may become accustomed to following the rules without engaging with the deeper moral reasons that are essential for moral
+action. 
 
 \section{Conclusion}
 \printbibliography[title={References}]
